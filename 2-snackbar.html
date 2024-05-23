@@ -11,8 +11,10 @@
   
   <script type="module" crossorigin src="/goit-js-hw-10/commonHelpers2.js"></script>
   <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/reset-df635d97.js">
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-77e16229.js">
   <link rel="stylesheet" href="/goit-js-hw-10/assets/reset-d3b5fc92.css">
-  <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-ae38d7aa.css">
+  <link rel="stylesheet" href="/goit-js-hw-10/assets/vendor-7a007824.css">
+  <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-ab6f561d.css">
 </head>
 
 <body>
@@ -20,6 +22,27 @@
     <a href="./index.html">Go to home</a>
     <h1>Snackbar</h1>
   </section>
+
+  <form class="form">
+    <label>
+      Delay (ms)
+      <input type="number" name="delay" required />
+    </label>
+
+    <fieldset>
+      <legend>State</legend>
+      <label>
+        <input type="radio" name="state" value="fulfilled" required />
+        Fulfilled
+      </label>
+      <label>
+        <input type="radio" name="state" value="rejected" required />
+        Rejected
+      </label>
+    </fieldset>
+
+    <button type="submit">Create notification</button>
+  </form>
 
   
 </body>
